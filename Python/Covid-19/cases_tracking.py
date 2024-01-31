@@ -10,7 +10,7 @@ def notifyMe(title,message):
         timeout = 3
     )
 def getData(url):
-    r = requests.get(url)
+    r = requests.get(url, timeout=60)
     return r.text
 
 
